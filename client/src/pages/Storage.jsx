@@ -11,9 +11,9 @@ function Storage() {
     const[modalOpen , setModalOpen] = useState(false);
 
     useEffect(()=>{
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-       
-        const wallet = async()=>{
+      
+      const wallet = async()=>{
+          const provider = new ethers.providers.Web3Provider(window.ethereum);
             if(provider){
                 await provider.send("eth_requestAccounts", []);
 

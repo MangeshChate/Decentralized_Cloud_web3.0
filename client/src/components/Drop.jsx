@@ -75,7 +75,7 @@ function Drop({ contract, account }) {
           className='container  w-full h-1/2 lg:w-1/2 lg:h-3/4 border-3 d-flex justify-content-center align-items-center border-gray-500 border-dashed blue-glassmorphism d-flex flex-column hover:bg-transparent'
         >
           {file ? (
-            <div >
+            <div className='d-flex flex-column justify-content-center align-items-center'>
 
               <span >
 

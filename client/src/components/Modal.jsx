@@ -25,7 +25,7 @@ function Modal({ contract, address, setModalOpen }) {
       <div className=' pt-4 p-4'>
         <h1 className='fs-2 text-center fw-bold text-light mt-3'>Give Access To Your Friend</h1>
         <div action="" className='mt-3 p-3'>
-          <input type="text" placeholder='Enter Address' className='custom-input rounded-5 w-full' onChange={(e) => setShareAddress(e.target.value)} />
+          <input type="text" placeholder='Enter Address' className='p-2 form-control  custom-input rounded-5 w-full' onChange={(e) => setShareAddress(e.target.value)} />
 
           {/* Drop down  */}
           <div className="dropdown mt-3 ">
@@ -46,7 +46,7 @@ function Modal({ contract, address, setModalOpen }) {
                 <a className="row d-flex justify-between mt-2 dropdown-item fw-bold font-monospace rounded-4 text-light hover:bg-gray-500" href="#">
                   <span className='col-10'>{address.user.length > 10 ? `${address.user.slice(0, 15)}...` : address.user}</span>
 
-                  <span className='col-2'><Remove className='bg-danger rounded-5' /></span>
+                  {/* <span className='col-2'><Remove className='bg-danger rounded-5' /></span> */}
                 </a>
               ))}
 
