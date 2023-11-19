@@ -12,8 +12,8 @@ function Storage() {
 
     useEffect(()=>{
       
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
       const wallet = async()=>{
-          const provider = new ethers.providers.Web3Provider(window.ethereum);
             if(provider){
                 await provider.send("eth_requestAccounts", []);
 

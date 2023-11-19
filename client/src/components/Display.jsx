@@ -55,7 +55,7 @@ function Display({ contract, account }) {
       <div className='container  mt-5   p-2 p-lg-5 d-flex flex-column '>
         <div className="row row-cols-2 mb-4 d-flex justify-content-center  align-items-center p-2">
           <span className=' col-lg-6 col-md-6 col-sm-12 col-12'>
-            <input type="text" name="" id="" placeholder={account} onChange={(e) => setOtherAddress(e.target.value)} className='form-control  input-glow  font-monospace rounded-5 bg-light bg-opacity-75 fw-bold ' />
+            <input type="text" name="" id="" placeholder={account} onChange={(e) => setOtherAddress(e.target.value)} className='form-control  input-glow  font-monospace rounded-5 bg-light bg-opacity-75 fw-bold '/>
           </span>
           <span className='col-lg-6 col-md-6 col-sm-12 col-12 pt-3 pt-lg-0  pt-sm-0 pt-md-0'>
 
