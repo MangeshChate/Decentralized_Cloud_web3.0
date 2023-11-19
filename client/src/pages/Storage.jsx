@@ -25,7 +25,7 @@ function Storage() {
           const signer = provider.getSigner();
           const address = await signer.getAddress();
   
-          console.log(address);
+          
           setAccount(address);
   
           let contractAddress = "0xedb7D01579dC76B7AABddA4C0b2F7167412d12ad";
@@ -33,7 +33,7 @@ function Storage() {
   
           const contract = new ethers.Contract(contractAddress, abi, signer);
   
-          console.log(contract);
+          
   
           setContract(contract);
           setProvider(signer);
@@ -51,7 +51,7 @@ function Storage() {
 
    
   
-  }, [provider])
+  }, [provider]);
 
 
   return (

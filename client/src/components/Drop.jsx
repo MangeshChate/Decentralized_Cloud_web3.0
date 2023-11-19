@@ -20,7 +20,7 @@ function Drop({ contract, account }) {
       setFileName('');
     }
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (file) {
@@ -37,7 +37,7 @@ function Drop({ contract, account }) {
 
           headers: {
             pinata_api_key: '9c7b88953bed4a983af8',
-            pinata_secret_api_key: `${process.env.REACT_APP_PINATA_SECRET_KEY}`,
+            pinata_secret_api_key: `53203490d2e84a0bdd80876d540cf493372e714d7ebdeccfc34d1692274c3ad3`,
             'Content-Type': 'multipart/form-data',
           },
         });
