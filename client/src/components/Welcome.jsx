@@ -30,7 +30,7 @@ const Welcome = () => {
     <div className="flex w-full justify-center mt-5 mt-lg-0 items-center  h-[100vh] pb-5 pb-lg-0">
       <div className="flex mf:flex-row flex-col items-center justify-between md:p-20 py-12 px-4 gap-lg-5 overflow-visible sm:overflow-hidden lg:overflow-visible md:overflow-visible">
         <div className="flex pt-5 mt-5 pt-lg-0 mt-lg-0 justify-start items-start flex-col mf:mr-10">
-          <h1 className="text-3xl sm:text-6xl  text-white text-gradient py-1">
+          <h1 className="text-4xl lg:text-6xl  text-white text-gradient py-1">
             Revolutionizing the  Cloud <br /> across the world
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
