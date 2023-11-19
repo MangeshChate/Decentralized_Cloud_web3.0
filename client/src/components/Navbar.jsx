@@ -38,7 +38,7 @@ const Navbar = ({ account , display}) => {
     
         
       </ul>
-      <a href="" className="d-lg-none d-block btn white-glassmorphism text-light input-glow font-monospace ">Click For Mobile</a>
+      <a href="https://metamask.app.link/dapp/rabbitcloud.netlify.app/" className="d-lg-none d-block btn white-glassmorphism text-light input-glow font-monospace ">Click For Mobile</a>
       <div className="flex relative">
         
         {!toggleMenu && (
