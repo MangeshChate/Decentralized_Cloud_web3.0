@@ -44,9 +44,21 @@ function Drop({ contract, account }) {
 
         const ImgHash = `https://gateway.pinata.cloud/ipfs/${resFile.data.IpfsHash}`;
 
-        await contract.add(account, ImgHash);
-        setIsLoading(false);
-        alert("Successfully Uploaded on a blockchain !");
+        await contract.add(account, ImgHash)
+          .then(() => {
+            
+            setIsLoading(false);
+            alert("Successfully Uploaded on a blockchain!");
+          })
+          .catch((error) => {
+            // Handle errors if the transaction fails
+            setIsLoading(false);
+            console.error("Error uploading to blockchain:", error);
+            alert("Transaction failed. Please check the console for details.");
+          });
+        
+       
+        // alert("Successfully Uploaded on a blockchain !");
         setFileName('');
         setFile(null);
 
