@@ -53,7 +53,7 @@ function Drop({ contract, account }) {
 
 
       } catch (error) {
-        alert("something went wrong !");
+        alert("IPFS Problem Occour Please Try Again Later !");
         console.log(error);
       }
 

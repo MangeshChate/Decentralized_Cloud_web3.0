@@ -45,7 +45,7 @@ function Storage() {
       provider && wallet();
 
     } catch (error) {
-      alert("Install Metamsk wallet to Interact with the blockchain ! If You are using andriod then click to connect with mobile button !");
+      alert("Install Metamsk wallet to Interact with the blockchain ! ")
     }
 
 
