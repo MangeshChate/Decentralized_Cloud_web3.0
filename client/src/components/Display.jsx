@@ -85,17 +85,16 @@ function Display({ contract, account }) {
           <div className="row row-cols-1 row-cols-md-4 row-cols-lg-4 ">
             {/* Card 1 */}
             {
-              data.map((data) => (
-
-                <div className='col mb-4'>
-                  <div className="card blue-glassmorphism">
-                    <div className="card-body white-glassmorphism">
-                      <img src={data} alt="" className='card-glow object-cover object-center' style={{ width: "100%", height: "356px" }} />
-                    </div>
-                  </div>
-                </div>
-
-              ))
+           data.reverse().map((data) => (
+            <div className='col mb-4' key={data}>
+              <div className="card blue-glassmorphism">
+                <a href={data} className="card-body white-glassmorphism">
+                  <img src={data} alt="" className='card-glow object-cover object-center' style={{ width: "100%", height: "356px" }} />
+                </a>
+              </div>
+            </div>
+          ))
+          
             }
 
 
