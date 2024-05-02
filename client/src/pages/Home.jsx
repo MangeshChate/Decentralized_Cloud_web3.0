@@ -4,11 +4,11 @@ function Home() {
   
   return (
     <div className="min-h-screen ">
-    <div className="gradient-bg-welcome">
+    <div className="bg-red-900">
       <Navbar display={false}/>
       <Welcome />
     </div>
-    <div className="gradient-bg-services">
+    <div className="bg-red-900">
 
       <Services />
 

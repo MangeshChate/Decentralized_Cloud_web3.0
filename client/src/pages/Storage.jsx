@@ -56,7 +56,7 @@ function Storage() {
 
   return (
     <div className="min-h-screen ">
-      <div className="gradient-bg-welcome position-relative">
+      <div className="bg-red-900 position-relative">
         <Navbar account={account} display={true} />
         <Drop account={account} contract={contract} />
         <Display account={account} contract={contract} />

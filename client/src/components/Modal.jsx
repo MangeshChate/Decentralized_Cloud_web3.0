@@ -21,7 +21,7 @@ function Modal({ contract, address, setModalOpen }) {
   }, [contract])
 
   return (
-    <div className='position-fixed  w-[90%] sm:w-[650px] h-[350px] sm:h-[auto] top-50 start-50 translate-middle rounded-5 blue-glassmorphism'>
+    <div className='position-fixed  w-[90%] sm:w-[650px] h-[350px] sm:h-[auto] top-50 start-50 translate-middle rounded-5 white-glassmorphism '>
       <div className=' pt-4 p-4'>
         <h1 className='fs-2 text-center fw-bold text-light mt-3'>Give Access To Your Friend</h1>
         <div action="" className='mt-3 p-3'>

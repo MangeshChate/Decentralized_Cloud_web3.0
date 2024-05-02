@@ -12,24 +12,24 @@ const Navbar = ({ account , display}) => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
-      <Link to="/" className="md:flex-[0.5] flex-initial justify-center items-center " style={{display:"flex" , justifyContent:"start" , alignItems:"center" , fontWeight:"bold"}}>
-        <img src="https://cdn-icons-png.flaticon.com/512/802/802338.png" alt="logo" width="45"  className=" cursor-pointer" />
-        <span className="text-white text-2xl d-lg-block d-none">RabbitCloud</span>
+    <nav className=" w-full  flex md:justify-center justify-between items-center p-4">
+      <Link to="/" className="md:flex-[0.5] flex-initial  items-center " style={{display:"flex" , justifyContent:"start" , alignItems:"center" , fontWeight:"bold"}}>
+       
+        <span className="text-white text-3xl d-lg-block d-none">JoyVault</span>
       </Link>
-      <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {["Home", "About", "Tutorials", "Rabbitchat"].map((item, index) => (
+      <ul className="text-white md:flex hidden  list-none flex-row justify-between items-center flex-initial">
+        {["Home", "About", "Tutorials", "Contact"].map((item, index) => (
           <NavBarItem key={item + index} title={item} />
         ))}
        {display ? (
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+        <li className="bg-red-500 py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
        {account ? (account.length > 10 ? `${account.slice(0 ,15)}...` : account) : "Connect"}
         </li>
          
        ):
        (
 
-          <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+          <li className="bg-red-500 py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
           Start
         </li>
        )
